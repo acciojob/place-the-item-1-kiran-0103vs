@@ -1,2 +1,18 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    flex-wrap: wrap;      /* Allows items to wrap to the next row if necessary */
+    justify-content: space-between; /* Ensures space between items with the first and last touching the edges */
+    margin: 0 10px;       /* Optional: Adjust the margin as needed */
+  }
+  
+  .item {
+    flex: 1 0 21%;        /* Adjusts the flex-basis to fit multiple items per row */
+    margin: 10px 0;       /* Adjusts the top and bottom margin for spacing between rows */
+    background-color: #ccc; /* For visual demonstration, change as needed */
+    text-align: center;   /* Center-aligns text in the items */
+    padding: 10px;        /* Adds padding inside the items */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+  }
+  
